@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvRegistro"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Mail*" />
+
+    <EditText
+        android:id="@+id/etDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etCorreo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Dni*" />
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etDni"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre*" />
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etNombre"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Apellido*" />
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etApellido"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Teléfono*" />
+<!--cometario-->
+    <EditText
+        android:id="@+id/etContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etTelefono"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Contraseña*" />
+    <EditText
+        android:id="@+id/etConfContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etContrasenia"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Repita la Contraseña*" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/etConfContrasenia"
+        android:text="Registrarse" />
+
+
+</RelativeLayout>
